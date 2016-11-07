@@ -34,7 +34,28 @@ public class CommonMethods {
             Thread.sleep(2000);
         }
         
+        // Unlock screen with password
+       /*     adb shell input keyevent 26/POWER // press unlock button
 
+            adb shell input touchscreen swipe 930 880 930 380 #Swipe UP
+            adb shell input text XXXX #Entering your passcode
+            adb shell input keyevent 66 #Pressing Enter 
+         // to press arrow button for caps lock and unlock
+                adb shell input keyevent 56
+                adb shell input keyevent 82 // this will unlock and ask for pin
+                
+                To lock the screen:
+
+            adb shell input keyevent 82 && adb shell input keyevent 26 && adb shell input keyevent 26
+            To lock the screen and turn it off
+            adb shell input keyevent 82 && adb shell input keyevent 26
+            To unlock the screen without pass
+
+            adb shell input keyevent 82 && adb shell input keyevent 66
+            To unlock the screen that has pass 1234
+            adb shell input keyevent 82 && adb shell input text 1234 && adb shell input keyevent 66
+                
+       */
     }
 
     public static void main(String[] args) throws Exception {
