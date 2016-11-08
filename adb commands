@@ -1,0 +1,17 @@
+// to see connected devices
+adb devices
+
+// to see the device info
+adb shell getprop
+
+// device android version
+adb shell getprop ro.build.version.release
+
+//to see device name and model
+>adb shell getprop ro.product.model/deivce/name
+
+// to see details
+adb device -l
+
+// sdk version
+adb shell getprop ro.build.version.sdk
