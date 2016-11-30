@@ -19,6 +19,21 @@ adb shell getprop ro.build.version.sdk
 //to hide the ketboard
 adb shell input keyevent 111
 
+for "enter" write
+adb shell input keyevent 23
+
+up
+adb shell input keyevent 19
+
+down
+adb shell input keyevent 20
+
+left
+adb shell input keyevent 21
+
+right
+adb shell input keyevent 22
+
 
 List Of Key codes:
 
